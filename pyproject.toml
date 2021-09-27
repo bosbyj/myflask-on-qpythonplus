@@ -1,6 +1,6 @@
 [project]
 name = "my-flask-on-oracle-cloud"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = [
     {name = "bosbyj", email = "bosbyj@gmail.com"},
@@ -36,3 +36,4 @@ dev = [
 version_toml = [
     "pyproject.toml:project.version"
 ]
+branch = "main"
