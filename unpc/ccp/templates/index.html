@@ -1,0 +1,33 @@
+
+
+<link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">  
+<link href="{{ url_for('static', filename='ccp.css') }}" rel="stylesheet">  
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="input-group">
+				<input id="keyword" name="keyword" type="text" class="form-control" value="">
+				<span class="input-group-btn">
+					<button id="button" class="btn btn-primary" type="submit">Go!</button>
+				</span>
+			</div>
+			<!-- /input-group -->
+			<div id="output" class="output">
+				<h4>查询说明</h4>
+				<ol>
+					<li>词尾自动补全<p>autom -> autom<b>ática</b>, autom<b>áticos</b></p></li>
+					<li>特殊字母识别<p>espan -> espa<b>ñ</b>ola</p></li>
+					<li>不区分大小写<p>espan -> <b>E</b>spaña</p></li>
+					<li>匹配任意单个字母 点号<p>au<b>.</b>omati -> au<b>t</b>omática, au<b>t</b>omáticos<br>au<b>..</b>m<b>..</b> -> a<b>ún</b> m<b>ás</b></p></li>
+					<li>匹配任意多个字母 星号<p>a<b>*</b>mentar -> a<b>li</b>mentar, a<b>u</b>mentar</p></li>
+				</ol>
+			</div>
+			<div id="pagination" class="pagination"></div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript" src="/static/spin.min.js"></script>
+	<script type="text/javascript" src="/static/jquery.min.js"></script>
+	<script type="text/javascript" src="/static/ccp.js"></script>

@@ -1,0 +1,17 @@
+b {
+  background-color: gold;
+}
+
+body {
+  font-size: 18px;
+}
+
+.marginalizer {
+  margin: 1em;
+}
+
+#output {
+  font-family: Consolas, monospace;
+  display: block;
+  margin: 10px 0 10px;
+}
