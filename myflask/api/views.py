@@ -4,7 +4,7 @@
 
 from flask import Blueprint, jsonify, redirect, request, url_for
 # from flask_login import login_required
-from myflask.db import query
+# from myflask.db import query
 # from unpc.extensions import login_manager
 from myflask.models import UrlParams
 

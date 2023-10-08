@@ -13,4 +13,4 @@ pydantic == 1.5.1
 pytest == 5.4.2
 
 # C:\Users\K29\PycharmProjects\unpc-api\app.py: 17
-sqlitefts == 0.5.1
+# sqlitefts == 0.5.1

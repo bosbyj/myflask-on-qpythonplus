@@ -6,7 +6,7 @@
 from flask import Flask, g
 
 from myflask import api, unpc, ccp
-from myflask.db import jieba
+# from myflask.db import jieba
 # from unpc.extensions import login_manager
 
 
@@ -26,16 +26,16 @@ def create_app(config_object="myflask.settings") -> Flask:
     register_blueprints(app)
     configure_logger(app)
 
-    with app.app_context():
-        # Flask实例运行之后, 手动初始化jieba
-        jieba.initialize()
+    # with app.app_context():
+    #     # Flask实例运行之后, 手动初始化jieba
+    #     jieba.initialize()
 
-    @app.teardown_appcontext
-    def close_connection(exception):
-        """Flask结束后, 执行关闭数据库."""
-        db = getattr(g, "_database", None)
-        if db is not None:
-            db.close()
+    # @app.teardown_appcontext
+    # def close_connection(exception):
+    #     """Flask结束后, 执行关闭数据库."""
+    #     db = getattr(g, "_database", None)
+    #     if db is not None:
+    #         db.close()
 
     return app
 
@@ -49,8 +49,8 @@ def register_extensions(app):
 
 def register_blueprints(app):
     """Register Flask blueprints."""
-    app.register_blueprint(api.views.blueprint)
-    app.register_blueprint(unpc.views.blueprint)
+    # app.register_blueprint(api.views.blueprint)
+    # app.register_blueprint(unpc.views.blueprint)
     # app.register_blueprint(mongoapp.views.blueprint)
     app.register_blueprint(ccp.views.blueprint)
     return None

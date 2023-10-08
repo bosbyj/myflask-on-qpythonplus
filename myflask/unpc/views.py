@@ -12,7 +12,7 @@ from flask import (
     url_for,
 )
 # from flask_login import login_required, login_user, logout_user
-from myflask.db import query
+# from myflask.db import query
 # from unpc.extensions import login_manager
 from myflask.models import UrlParams
 

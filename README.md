@@ -9,6 +9,9 @@
 
 ## Changelog
 
+### 0.1.1
+    * 去除 unpc 功能，cffi兼容性问题
+
 ### 0.1.0
     * 移植到 qpythonplus 手机平台
     * 去除 Mongo 数据库
