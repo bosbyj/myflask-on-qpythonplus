@@ -1,11 +1,11 @@
 [project]
-name = "my-flask-on-oracle-cloud"
+name = "myflask-on-qpythonplus"
 version = "0.3.0"
 description = ""
 authors = [
     {name = "bosbyj", email = "bosbyj@gmail.com"},
 ]
-dependencies = ["gunicorn", "pymongo==3.11.1", "dnspython==2.0.0", "flask-pymongo==2.3.0", "flask==1.1.2", "flask-login==0.5.0", "jieba==0.42.1", "pydantic==1.5.1", "pytest==5.4.2", "sqlitefts==0.5.1"]
+dependencies = ["flask==1.1.2", "jieba==0.42.1", "pydantic==1.5.1", "pytest==5.4.2", "sqlitefts==0.5.1"]
 requires-python = ">=3.8"
 dynamic = ["classifiers"]
 license = {text = "MIT"}

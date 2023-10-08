@@ -1,4 +1,4 @@
-from unpc import app
+from myflask import app
 
 # gunicorn 调用
 heroku_app = app.create_app()

@@ -4,16 +4,16 @@
 
 from typing import List, Optional
 
-from flask_login import UserMixin
+# from flask_login import UserMixin
 from pydantic import BaseModel
 
 
-class User(UserMixin):
-    def __init__(self, id):
-        self.id = id
+# class User(UserMixin):
+#     def __init__(self, id):
+#         self.id = id
 
-    def get_id(self):
-        return str(self.id)
+#     def get_id(self):
+#         return str(self.id)
 
 
 class ResultRow(BaseModel):

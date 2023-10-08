@@ -9,9 +9,9 @@ import jieba
 from flask import g, current_app
 from sqlitefts import fts5
 
-from unpc.models import QueryResponse, ResultRow, UrlParams
+from myflask.models import QueryResponse, ResultRow, UrlParams
 
-DATABASE = "unpc/tmdata.db"
+DATABASE = "myflask/tmdata.db"
 
 
 class JiebaTokenizer(fts5.FTS5Tokenizer):

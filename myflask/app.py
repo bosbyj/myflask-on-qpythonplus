@@ -5,12 +5,12 @@
 
 from flask import Flask, g
 
-from unpc import api, mongoapp, web, ccp
-from unpc.db import jieba
-from unpc.extensions import login_manager, mongo
+from myflask import api, unpc, ccp
+from myflask.db import jieba
+# from unpc.extensions import login_manager
 
 
-def create_app(config_object="unpc.settings") -> Flask:
+def create_app(config_object="myflask.settings") -> Flask:
     """工厂函数.
     Create application factory, as explained here: http://flask.pocoo.org/docs/patterns/appfactories/.
     :param config_object: The configuration object to use.
@@ -43,14 +43,14 @@ def create_app(config_object="unpc.settings") -> Flask:
 def register_extensions(app):
     """Register Flask extensions."""
     # mongo.init_app(app)
-    login_manager.init_app(app)
+    # login_manager.init_app(app)
     return None
 
 
 def register_blueprints(app):
     """Register Flask blueprints."""
     app.register_blueprint(api.views.blueprint)
-    app.register_blueprint(web.views.blueprint)
+    app.register_blueprint(unpc.views.blueprint)
     # app.register_blueprint(mongoapp.views.blueprint)
     app.register_blueprint(ccp.views.blueprint)
     return None

@@ -9,6 +9,13 @@
 
 ## Changelog
 
+### 0.1.0
+    * 移植到 qpythonplus 手机平台
+    * 去除 Mongo 数据库
+    * 去除 Login 功能
+    * 一级目录重命名为 myflask
+    * 二级目录 web 重命名为 unpc
+
 ### 0.0.10
     * 迁移 ccp concordance
 
